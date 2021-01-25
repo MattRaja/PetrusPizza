@@ -1,0 +1,3110 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApp</name>
+    </assembly>
+    <members>
+        <member name="T:WebApp.ApiControllers._1._0.BalancesController">
+            <summary>
+            Balances
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.BalancesController.#ctor(Contracts.BLL.App.IAppBLL)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.BalancesController.GetBalances">
+            <summary>
+            get all the Balances
+            </summary>
+            <returns>Array of Balances</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.BalancesController.GetBalance(System.Guid)">
+            <summary>
+            Get a single Balance
+            </summary>
+            <param name="id">GpBalance Id</param>
+            <returns>Balance object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.BalancesController.PutBalance(System.Guid,ee.itcollege.mrajam.BLL.App.DTO.Balance)">
+            <summary>
+            Update the Balance
+            </summary>
+            <param name="id">Balance Id</param>
+            <param name="BalanceDTO">Balance object</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.BalancesController.PostBalance(PublicApi.DTO.v1.BalanceDTO)">
+            <summary>
+            Post the new Balance
+            </summary>
+            <param name="Balance"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.BalancesController.DeleteBalance(System.Guid)">
+            <summary>
+            Delete the Balance. Also deletes all the GpsLocations for this session.
+            </summary>
+            <param name="id">Balance Id to delete.</param>
+            <returns>Balance just deleted</returns>
+        </member>
+        <member name="T:WebApp.ApiControllers._1._0.CulturesController">
+            <summary>
+            Culture info
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.CulturesController.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Builder.RequestLocalizationOptions})">
+            <summary>
+            Cultures
+            </summary>
+            <param name="localizationOptions"></param>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.CulturesController.GetCultures">
+            <summary>
+            Get the list of supported cultures
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.CulturesController.GetResources">
+            <summary>
+            Get the resource strings and keys
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.ApiControllers._1._0.ExtraToppingsOnItemsController">
+            <summary>
+            ExtraToppingsOnItems
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.ExtraToppingsOnItemsController.#ctor(Contracts.BLL.App.IAppBLL)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.ExtraToppingsOnItemsController.GetExtraToppingsOnItems">
+            <summary>
+            get all the ExtraToppingsOnItems
+            </summary>
+            <returns>Array of ExtraToppingsOnItems</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.ExtraToppingsOnItemsController.GetExtraToppingsOnItem(System.Guid)">
+            <summary>
+            Get a single ExtraToppingsOnItem
+            </summary>
+            <param name="id">GpExtraToppingOnItem Id</param>
+            <returns>ExtraToppingsOnItem object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.ExtraToppingsOnItemsController.PutExtraToppingsOnItem(System.Guid,ee.itcollege.mrajam.BLL.App.DTO.ExtraToppingsOnItem)">
+            <summary>
+            Update the ExtraToppingsOnItem
+            </summary>
+            <param name="id">ExtraToppingOnItem Id</param>
+            <param name="ExtraToppingsOnItemDTO">ExtraToppingsOnItem object</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.ExtraToppingsOnItemsController.PostExtraToppingsOnItem(PublicApi.DTO.v1.ExtraToppingsOnItemDTO)">
+            <summary>
+            Post the new ExtraToppingsOnItem
+            </summary>
+            <param name="ExtraToppingsOnItem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.ExtraToppingsOnItemsController.DeleteExtraToppingsOnItem(System.Guid)">
+            <summary>
+            Delete the ExtraToppingsOnItem. Also deletes all the GpsLocations for this session.
+            </summary>
+            <param name="id">ExtraToppingOnItem Id to delete.</param>
+            <returns>ExtraToppingOnItem just deleted</returns>
+        </member>
+        <member name="T:WebApp.ApiControllers._1._0.Identity.AccountController">
+            <summary>
+            Api endpoint for registering new user and user log-in (jwt token generation)
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.Identity.AccountController.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Identity.UserManager{Domain.App.Identity.AppUser},Microsoft.AspNetCore.Identity.SignInManager{Domain.App.Identity.AppUser},Microsoft.Extensions.Logging.ILogger{WebApp.ApiControllers._1._0.Identity.AccountController})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="configuration"></param>
+            <param name="userManager"></param>
+            <param name="signInManager"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.Identity.AccountController.Login(PublicApi.DTO.v1.Identity.LoginDTO)">
+            <summary>
+            Endpoint for user log-in (jwt generation)
+            </summary>
+            <param name="dto">login data</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.Identity.AccountController.Register(PublicApi.DTO.v1.Identity.RegisterDTO)">
+            <summary>
+            Endpoint for user registration and immediate log-in (jwt generation) 
+            </summary>
+            <param name="dto">user data</param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.ApiControllers._1._0.ItemRowsController">
+            <summary>
+            ItemRows
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.ItemRowsController.#ctor(Contracts.BLL.App.IAppBLL)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.ItemRowsController.GetItemRows">
+            <summary>
+            get all the ItemRows
+            </summary>
+            <returns>Array of ItemRows</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.ItemRowsController.GetItemRow(System.Guid)">
+            <summary>
+            Get a single ItemRow
+            </summary>
+            <param name="id">GpItemRow Id</param>
+            <returns>ItemRow object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.ItemRowsController.PutItemRow(System.Guid,ee.itcollege.mrajam.BLL.App.DTO.ItemRow)">
+            <summary>
+            Update the ItemRow
+            </summary>
+            <param name="id">ItemRow Id</param>
+            <param name="ItemRowDTO">ItemRow object</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.ItemRowsController.PostItemRow(PublicApi.DTO.v1.ItemRowDTO)">
+            <summary>
+            Post the new ItemRow
+            </summary>
+            <param name="ItemRow"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.ItemRowsController.DeleteItemRow(System.Guid)">
+            <summary>
+            Delete the ItemRow. Also deletes all the GpsLocations for this session.
+            </summary>
+            <param name="id">ItemRow Id to delete.</param>
+            <returns>GpItemRow just deleted</returns>
+        </member>
+        <member name="T:WebApp.ApiControllers._1._0.OrderRowsController">
+            <summary>
+            OrderRows
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.OrderRowsController.#ctor(Contracts.BLL.App.IAppBLL)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.OrderRowsController.GetOrderRows">
+            <summary>
+            get all the OrderRows
+            </summary>
+            <returns>Array of OrderRows</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.OrderRowsController.GetOrderRow(System.Guid)">
+            <summary>
+            Get a single OrderRow
+            </summary>
+            <param name="id">GpOrderRow Id</param>
+            <returns>OrderRow object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.OrderRowsController.PutOrderRow(System.Guid,ee.itcollege.mrajam.BLL.App.DTO.OrderRow)">
+            <summary>
+            Update the OrderRow
+            </summary>
+            <param name="id">OrderRow Id</param>
+            <param name="OrderRowDTO">OrderRow object</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.OrderRowsController.PostOrderRow(System.Text.Json.JsonElement)">
+            <summary>
+            Post the new OrderRow
+            </summary>
+            <param name="OrderRowJson"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.OrderRowsController.DeleteOrderRow(System.Guid)">
+            <summary>
+            Delete the OrderRow. Also deletes all the GpsLocations for this session.
+            </summary>
+            <param name="id">OrderRow Id to delete.</param>
+            <returns>OrderRow just deleted</returns>
+        </member>
+        <member name="T:WebApp.ApiControllers._1._0.OrdersController">
+            <summary>
+            Orders
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.OrdersController.#ctor(Contracts.BLL.App.IAppBLL)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.OrdersController.GetOrders">
+            <summary>
+            get all the Orders
+            </summary>
+            <returns>Array of Orders</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.OrdersController.GetOrder(System.Guid)">
+            <summary>
+            Get a single Order
+            </summary>
+            <param name="id">GpOrder Id</param>
+            <returns>Order object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.OrdersController.PutOrder(System.Guid,ee.itcollege.mrajam.BLL.App.DTO.Order)">
+            <summary>
+            Update the Order
+            </summary>
+            <param name="id">Order Id</param>
+            <param name="OrderDTO">Order object</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.OrdersController.PostOrder(System.Text.Json.JsonElement)">
+            <summary>
+            Post the new Order
+            </summary>
+            <param name="OrderJson"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.OrdersController.DeleteOrder(System.Guid)">
+            <summary>
+            Delete the Order. Also deletes all the GpsLocations for this session.
+            </summary>
+            <param name="id">Order Id to delete.</param>
+            <returns>Order just deleted</returns>
+        </member>
+        <member name="T:WebApp.ApiControllers._1._0.PaymentsController">
+            <summary>
+            Payments
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PaymentsController.#ctor(Contracts.BLL.App.IAppBLL)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PaymentsController.GetPayments">
+            <summary>
+            get all the Payments
+            </summary>
+            <returns>Array of Payments</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PaymentsController.GetPayment(System.Guid)">
+            <summary>
+            Get a single Payment
+            </summary>
+            <param name="id">GpPayment Id</param>
+            <returns>Payment object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PaymentsController.PutPayment(System.Guid,ee.itcollege.mrajam.BLL.App.DTO.Payment)">
+            <summary>
+            Update the Payment
+            </summary>
+            <param name="id">Payment Id</param>
+            <param name="PaymentDTO">Payment object</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PaymentsController.PostPayment(PublicApi.DTO.v1.PaymentDTO)">
+            <summary>
+            Post the new Payment
+            </summary>
+            <param name="Payment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PaymentsController.DeletePayment(System.Guid)">
+            <summary>
+            Delete the Payment. Also deletes all the GpsLocations for this session.
+            </summary>
+            <param name="id">Payment Id to delete.</param>
+            <returns>Payment just deleted</returns>
+        </member>
+        <member name="T:WebApp.ApiControllers._1._0.PersonsController">
+            <summary>
+            Persons
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PersonsController.#ctor(Contracts.BLL.App.IAppBLL)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PersonsController.GetPersons">
+            <summary>
+            get all the Persons
+            </summary>
+            <returns>Array of Persons</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PersonsController.GetPerson(System.Guid)">
+            <summary>
+            Get a single Person
+            </summary>
+            <param name="id">GpPerson Id</param>
+            <returns>Person object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PersonsController.PutPerson(System.Guid,ee.itcollege.mrajam.BLL.App.DTO.Person)">
+            <summary>
+            Update the Person
+            </summary>
+            <param name="id">Person Id</param>
+            <param name="PersonDTO">Person object</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PersonsController.PostPerson(PublicApi.DTO.v1.PersonDTO)">
+            <summary>
+            Post the new Person
+            </summary>
+            <param name="Person"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PersonsController.DeletePerson(System.Guid)">
+            <summary>
+            Delete the Person. Also deletes all the GpsLocations for this session.
+            </summary>
+            <param name="id">Person Id to delete.</param>
+            <returns>Person just deleted</returns>
+        </member>
+        <member name="T:WebApp.ApiControllers._1._0.PizzaNamesController">
+            <summary>
+            PizzaNames
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaNamesController.#ctor(Contracts.BLL.App.IAppBLL)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaNamesController.GetPizzaNames">
+            <summary>
+            get all the PizzaNames
+            </summary>
+            <returns>Array of PizzaNames</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaNamesController.GetPizzaName(System.Guid)">
+            <summary>
+            Get a single PizzaName
+            </summary>
+            <param name="id">PizzaName Id</param>
+            <returns>PizzaName object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaNamesController.PutPizzaName(System.Nullable{System.Guid},System.Text.Json.JsonElement)">
+            <summary>
+            Update the PizzaName
+            </summary>
+            <param name="id">PizzaName Id</param>
+            <param name="pizzaNameJsonDTO">pizzaName object</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaNamesController.PostPizzaName(System.Text.Json.JsonElement)">
+            <summary>
+            Post the new PizzaName
+            </summary>
+            <param name="pizzaNameJson"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaNamesController.DeletePizzaName(System.Nullable{System.Guid})">
+            <summary>
+            Delete the PizzaName. Also deletes all the GpsLocations for this session.
+            </summary>
+            <param name="id">PizzaName Id to delete.</param>
+            <returns>PizzaName just deleted</returns>
+        </member>
+        <member name="T:WebApp.ApiControllers._1._0.PizzaOrdersController">
+            <summary>
+            PizzaOrders
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaOrdersController.#ctor(Contracts.BLL.App.IAppBLL)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaOrdersController.GetPizzaOrders">
+            <summary>
+            get all the PizzaOrders
+            </summary>
+            <returns>Array of PizzaOrders</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaOrdersController.GetPizzaOrder(System.Guid)">
+            <summary>
+            Get a single PizzaOrder
+            </summary>
+            <param name="id">GpPizzaOrder Id</param>
+            <returns>PizzaOrder object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaOrdersController.PutPizzaOrder(System.Guid,ee.itcollege.mrajam.BLL.App.DTO.PizzaOrder)">
+            <summary>
+            Update the PizzaOrder
+            </summary>
+            <param name="id">PizzaOrder Id</param>
+            <param name="PizzaOrderDTO">PizzaOrder object</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaOrdersController.PostPizzaOrder(PublicApi.DTO.v1.PizzaOrderDTO)">
+            <summary>
+            Post the new PizzaOrder
+            </summary>
+            <param name="PizzaOrder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaOrdersController.DeletePizzaOrder(System.Guid)">
+            <summary>
+            Delete the PizzaOrder. Also deletes all the GpsLocations for this session.
+            </summary>
+            <param name="id">PizzaOrder Id to delete.</param>
+            <returns>PizzaOrder just deleted</returns>
+        </member>
+        <member name="T:WebApp.ApiControllers._1._0.PizzaSizesController">
+            <summary>
+            PizzaSizes
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaSizesController.#ctor(Contracts.BLL.App.IAppBLL)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaSizesController.GetPizzaSizes">
+            <summary>
+            get all the PizzaSizes
+            </summary>
+            <returns>Array of PizzaSizes</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaSizesController.GetPizzaSize(System.Guid)">
+            <summary>
+            Get a single PizzaSize
+            </summary>
+            <param name="id">PizzaSize Id</param>
+            <returns>PizzaSize object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaSizesController.PutPizzaSize(System.Guid,ee.itcollege.mrajam.BLL.App.DTO.PizzaSize)">
+            <summary>
+            Update the PizzaSize
+            </summary>
+            <param name="id">PizzaSize Id</param>
+            <param name="PizzaSizeDTO">PizzaSize object</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaSizesController.PostPizzaSize(PublicApi.DTO.v1.PizzaSizeDTO)">
+            <summary>
+            Post the new PizzaSize
+            </summary>
+            <param name="PizzaSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaSizesController.DeletePizzaSize(System.Guid)">
+            <summary>
+            Delete the PizzaSize. Also deletes all the GpsLocations for this session.
+            </summary>
+            <param name="id">PizzaSize Id to delete.</param>
+            <returns>PizzaSize just deleted</returns>
+        </member>
+        <member name="T:WebApp.ApiControllers._1._0.PizzaTypesController">
+            <summary>
+            PizzaTypes
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaTypesController.#ctor(Contracts.BLL.App.IAppBLL)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaTypesController.GetPizzaTypes">
+            <summary>
+            get all the PizzaTypes
+            </summary>
+            <returns>Array of PizzaTypes</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaTypesController.GetPizzaType(System.Guid)">
+            <summary>
+            Get a single PizzaType
+            </summary>
+            <param name="id">PizzaType Id</param>
+            <returns>PizzaType object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaTypesController.PutPizzaType(System.Guid,ee.itcollege.mrajam.BLL.App.DTO.PizzaType)">
+            <summary>
+            Update the PizzaType
+            </summary>
+            <param name="id">PizzaType Id</param>
+            <param name="PizzaTypeDTO">PizzaType object</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaTypesController.PostPizzaType(PublicApi.DTO.v1.PizzaTypeDTO)">
+            <summary>
+            Post the new PizzaType
+            </summary>
+            <param name="PizzaType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.PizzaTypesController.DeletePizzaType(System.Guid)">
+            <summary>
+            Delete the PizzaType. Also deletes all the GpsLocations for this session.
+            </summary>
+            <param name="id">PizzaType Id to delete.</param>
+            <returns>PizzaType just deleted</returns>
+        </member>
+        <member name="T:WebApp.ApiControllers._1._0.ToppingsController">
+            <summary>
+            Toppings
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.ToppingsController.#ctor(Contracts.BLL.App.IAppBLL)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.ToppingsController.GetToppings">
+            <summary>
+            get all the Toppings
+            </summary>
+            <returns>Array of Toppings</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.ToppingsController.GetTopping(System.Guid)">
+            <summary>
+            Get a single Topping
+            </summary>
+            <param name="id">Topping Id</param>
+            <returns>Topping object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.ToppingsController.PutTopping(System.Guid,System.Text.Json.JsonElement)">
+            <summary>
+            Update the Topping
+            </summary>
+            <param name="id">Topping Id</param>
+            <param name="ToppingJson">Topping object</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.ToppingsController.PostTopping(System.Text.Json.JsonElement)">
+            <summary>
+            Post the new Topping
+            </summary>
+            <param name="toppingJson"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.ApiControllers._1._0.ToppingsController.DeleteTopping(System.Guid)">
+            <summary>
+            Delete the Topping. Also deletes all the GpsLocations for this session.
+            </summary>
+            <param name="id">Topping Id to delete.</param>
+            <returns>Topping just deleted</returns>
+        </member>
+        <member name="T:WebApp.Areas.Identity.IdentityHostingStartup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.IdentityHostingStartup.Configure(Microsoft.AspNetCore.Hosting.IWebHostBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.AccessDeniedModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.AccessDeniedModel.OnGet">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.ConfirmEmailModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.ConfirmEmailModel.#ctor(Microsoft.AspNetCore.Identity.UserManager{Domain.App.Identity.AppUser})">
+            <summary>
+            
+            </summary>
+            <param name="userManager"></param>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ConfirmEmailModel.StatusMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.ConfirmEmailModel.OnGetAsync(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="userId"></param>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.ConfirmEmailChangeModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.ConfirmEmailChangeModel.#ctor(Microsoft.AspNetCore.Identity.UserManager{Domain.App.Identity.AppUser},Microsoft.AspNetCore.Identity.SignInManager{Domain.App.Identity.AppUser})">
+            <summary>
+            
+            </summary>
+            <param name="userManager"></param>
+            <param name="signInManager"></param>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ConfirmEmailChangeModel.StatusMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.ConfirmEmailChangeModel.OnGetAsync(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="userId"></param>
+            <param name="email"></param>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.ExternalLoginModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.ExternalLoginModel.#ctor(Microsoft.AspNetCore.Identity.SignInManager{Domain.App.Identity.AppUser},Microsoft.AspNetCore.Identity.UserManager{Domain.App.Identity.AppUser},Microsoft.Extensions.Logging.ILogger{WebApp.Areas.Identity.Pages.Account.ExternalLoginModel},Microsoft.AspNetCore.Identity.UI.Services.IEmailSender)">
+            <summary>
+            
+            </summary>
+            <param name="signInManager"></param>
+            <param name="userManager"></param>
+            <param name="logger"></param>
+            <param name="emailSender"></param>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ExternalLoginModel.Input">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ExternalLoginModel.LoginProvider">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ExternalLoginModel.ReturnUrl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ExternalLoginModel.ErrorMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ExternalLoginModel.InputModel.Email">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.ExternalLoginModel.OnGetAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.ExternalLoginModel.OnPost(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="provider"></param>
+            <param name="returnUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.ExternalLoginModel.OnGetCallbackAsync(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="returnUrl"></param>
+            <param name="remoteError"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.ExternalLoginModel.OnPostConfirmationAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="returnUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginModel.Input">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginModel.ExternalLogins">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginModel.ReturnUrl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginModel.ErrorMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginModel.InputModel.Email">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginModel.InputModel.Password">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginModel.InputModel.RememberMe">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.LoginModel.OnGetAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="returnUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.LoginModel.OnPostAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="returnUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.LoginWith2faModel.#ctor(Microsoft.AspNetCore.Identity.SignInManager{Domain.App.Identity.AppUser},Microsoft.Extensions.Logging.ILogger{WebApp.Areas.Identity.Pages.Account.LoginWith2faModel})">
+            <summary>
+            
+            </summary>
+            <param name="signInManager"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginWith2faModel.Input">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginWith2faModel.RememberMe">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginWith2faModel.ReturnUrl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginWith2faModel.InputModel.TwoFactorCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginWith2faModel.InputModel.RememberMachine">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.LoginWith2faModel.OnGetAsync(System.Boolean,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="rememberMe"></param>
+            <param name="returnUrl"></param>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.LoginWith2faModel.OnPostAsync(System.Boolean,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="rememberMe"></param>
+            <param name="returnUrl"></param>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel.#ctor(Microsoft.AspNetCore.Identity.SignInManager{Domain.App.Identity.AppUser},Microsoft.Extensions.Logging.ILogger{WebApp.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel})">
+            <summary>
+            
+            </summary>
+            <param name="signInManager"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel.Input">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel.ReturnUrl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel.InputModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel.InputModel.RecoveryCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel.OnGetAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="returnUrl"></param>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel.OnPostAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="returnUrl"></param>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.LogoutModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.LogoutModel.#ctor(Microsoft.AspNetCore.Identity.SignInManager{Domain.App.Identity.AppUser},Microsoft.Extensions.Logging.ILogger{WebApp.Areas.Identity.Pages.Account.LogoutModel})">
+            <summary>
+            
+            </summary>
+            <param name="signInManager"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.LogoutModel.OnGet">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.LogoutModel.OnPost(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="returnUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.ChangePasswordModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ChangePasswordModel.#ctor(Microsoft.AspNetCore.Identity.UserManager{Domain.App.Identity.AppUser},Microsoft.AspNetCore.Identity.SignInManager{Domain.App.Identity.AppUser},Microsoft.Extensions.Logging.ILogger{WebApp.Areas.Identity.Pages.Account.Manage.ChangePasswordModel})">
+            <summary>
+            
+            </summary>
+            <param name="userManager"></param>
+            <param name="signInManager"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ChangePasswordModel.Input">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ChangePasswordModel.StatusMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.ChangePasswordModel.InputModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ChangePasswordModel.InputModel.OldPassword">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ChangePasswordModel.InputModel.NewPassword">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ChangePasswordModel.InputModel.ConfirmPassword">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ChangePasswordModel.OnGetAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ChangePasswordModel.OnPostAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel.#ctor(Microsoft.AspNetCore.Identity.UserManager{Domain.App.Identity.AppUser},Microsoft.AspNetCore.Identity.SignInManager{Domain.App.Identity.AppUser},Microsoft.Extensions.Logging.ILogger{WebApp.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel})">
+            <summary>
+            
+            </summary>
+            <param name="userManager"></param>
+            <param name="signInManager"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel.Input">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel.InputModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel.InputModel.Password">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel.RequirePassword">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel.OnGet">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel.OnPostAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel.#ctor(Microsoft.AspNetCore.Identity.UserManager{Domain.App.Identity.AppUser},Microsoft.Extensions.Logging.ILogger{WebApp.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel})">
+            <summary>
+            
+            </summary>
+            <param name="userManager"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel.OnPostAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.EmailModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.EmailModel.#ctor(Microsoft.AspNetCore.Identity.UserManager{Domain.App.Identity.AppUser},Microsoft.AspNetCore.Identity.SignInManager{Domain.App.Identity.AppUser},Microsoft.AspNetCore.Identity.UI.Services.IEmailSender)">
+            <summary>
+            
+            </summary>
+            <param name="userManager"></param>
+            <param name="signInManager"></param>
+            <param name="emailSender"></param>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.EmailModel.Username">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.EmailModel.Email">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.EmailModel.IsEmailConfirmed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.EmailModel.StatusMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.EmailModel.Input">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.EmailModel.InputModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.EmailModel.InputModel.NewEmail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.EmailModel.OnGetAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.EmailModel.OnPostChangeEmailAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.EmailModel.OnPostSendVerificationEmailAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel.#ctor(Microsoft.AspNetCore.Identity.UserManager{Domain.App.Identity.AppUser},Microsoft.Extensions.Logging.ILogger{WebApp.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel},System.Text.Encodings.Web.UrlEncoder)">
+            <summary>
+            
+            </summary>
+            <param name="userManager"></param>
+            <param name="logger"></param>
+            <param name="urlEncoder"></param>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel.SharedKey">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel.AuthenticatorUri">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel.RecoveryCodes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel.StatusMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel.Input">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel.InputModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel.InputModel.Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel.OnGetAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel.OnPostAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel.#ctor(Microsoft.AspNetCore.Identity.UserManager{Domain.App.Identity.AppUser},Microsoft.AspNetCore.Identity.SignInManager{Domain.App.Identity.AppUser})">
+            <summary>
+            
+            </summary>
+            <param name="userManager"></param>
+            <param name="signInManager"></param>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel.CurrentLogins">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel.OtherLogins">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel.ShowRemoveButton">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel.StatusMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel.OnGetAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel.OnPostRemoveLoginAsync(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="loginProvider"></param>
+            <param name="providerKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel.OnPostLinkLoginAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="provider"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel.OnGetLinkLoginCallbackAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.GenerateRecoveryCodesModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.GenerateRecoveryCodesModel.#ctor(Microsoft.AspNetCore.Identity.UserManager{Domain.App.Identity.AppUser},Microsoft.Extensions.Logging.ILogger{WebApp.Areas.Identity.Pages.Account.Manage.GenerateRecoveryCodesModel})">
+            <summary>
+            
+            </summary>
+            <param name="userManager"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.GenerateRecoveryCodesModel.RecoveryCodes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.GenerateRecoveryCodesModel.StatusMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.GenerateRecoveryCodesModel.OnGetAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.GenerateRecoveryCodesModel.OnPostAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.IndexModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.IndexModel.#ctor(Microsoft.AspNetCore.Identity.UserManager{Domain.App.Identity.AppUser},Microsoft.AspNetCore.Identity.SignInManager{Domain.App.Identity.AppUser})">
+            <summary>
+            
+            </summary>
+            <param name="userManager"></param>
+            <param name="signInManager"></param>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.IndexModel.Username">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.IndexModel.StatusMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.IndexModel.Input">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.IndexModel.InputModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.IndexModel.InputModel.PhoneNumber">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.IndexModel.OnGetAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.IndexModel.OnPostAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.Index">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.Email">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.ChangePassword">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.ExternalLogins">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.PersonalData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.TwoFactorAuthentication">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.IndexNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)">
+            <summary>
+            
+            </summary>
+            <param name="viewContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.EmailNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)">
+            <summary>
+            
+            </summary>
+            <param name="viewContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.ChangePasswordNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)">
+            <summary>
+            
+            </summary>
+            <param name="viewContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.ExternalLoginsNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)">
+            <summary>
+            
+            </summary>
+            <param name="viewContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.PersonalDataNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)">
+            <summary>
+            
+            </summary>
+            <param name="viewContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.TwoFactorAuthenticationNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)">
+            <summary>
+            
+            </summary>
+            <param name="viewContext"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.PersonalDataModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.PersonalDataModel.#ctor(Microsoft.AspNetCore.Identity.UserManager{Domain.App.Identity.AppUser},Microsoft.Extensions.Logging.ILogger{WebApp.Areas.Identity.Pages.Account.Manage.PersonalDataModel})">
+            <summary>
+            
+            </summary>
+            <param name="userManager"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.PersonalDataModel.OnGet">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.ResetAuthenticatorModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ResetAuthenticatorModel.#ctor(Microsoft.AspNetCore.Identity.UserManager{Domain.App.Identity.AppUser},Microsoft.AspNetCore.Identity.SignInManager{Domain.App.Identity.AppUser},Microsoft.Extensions.Logging.ILogger{WebApp.Areas.Identity.Pages.Account.Manage.ResetAuthenticatorModel})">
+            <summary>
+            
+            </summary>
+            <param name="userManager"></param>
+            <param name="signInManager"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ResetAuthenticatorModel.StatusMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ResetAuthenticatorModel.OnGet">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ResetAuthenticatorModel.OnPostAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.SetPasswordModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.SetPasswordModel.#ctor(Microsoft.AspNetCore.Identity.UserManager{Domain.App.Identity.AppUser},Microsoft.AspNetCore.Identity.SignInManager{Domain.App.Identity.AppUser})">
+            <summary>
+            
+            </summary>
+            <param name="userManager"></param>
+            <param name="signInManager"></param>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.SetPasswordModel.Input">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.SetPasswordModel.StatusMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.SetPasswordModel.InputModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.SetPasswordModel.InputModel.NewPassword">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.SetPasswordModel.InputModel.ConfirmPassword">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.SetPasswordModel.OnGetAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.SetPasswordModel.OnPostAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.ShowRecoveryCodesModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ShowRecoveryCodesModel.RecoveryCodes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ShowRecoveryCodesModel.StatusMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ShowRecoveryCodesModel.OnGet">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.#ctor(Microsoft.AspNetCore.Identity.UserManager{Domain.App.Identity.AppUser},Microsoft.AspNetCore.Identity.SignInManager{Domain.App.Identity.AppUser},Microsoft.Extensions.Logging.ILogger{WebApp.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel})">
+            <summary>
+            
+            </summary>
+            <param name="userManager"></param>
+            <param name="signInManager"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.HasAuthenticator">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.RecoveryCodesLeft">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.Is2faEnabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.IsMachineRemembered">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.StatusMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.OnGet">
+            
+            <summary>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.OnPost">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.RegisterModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.RegisterModel.#ctor(Microsoft.AspNetCore.Identity.UserManager{Domain.App.Identity.AppUser},Microsoft.AspNetCore.Identity.SignInManager{Domain.App.Identity.AppUser},Microsoft.Extensions.Logging.ILogger{WebApp.Areas.Identity.Pages.Account.RegisterModel},Microsoft.AspNetCore.Identity.UI.Services.IEmailSender)">
+            <summary>
+            
+            </summary>
+            <param name="userManager"></param>
+            <param name="signInManager"></param>
+            <param name="logger"></param>
+            <param name="emailSender"></param>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.RegisterModel.Input">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.RegisterModel.ReturnUrl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.RegisterModel.ExternalLogins">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.RegisterModel.InputModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.RegisterModel.InputModel.Email">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.RegisterModel.InputModel.FirstName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.RegisterModel.InputModel.LastName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.RegisterModel.InputModel.Password">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.RegisterModel.InputModel.ConfirmPassword">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.RegisterModel.OnGetAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="returnUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.RegisterModel.OnPostAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="returnUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.RegisterConfirmationModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.RegisterConfirmationModel.#ctor(Microsoft.AspNetCore.Identity.UserManager{Domain.App.Identity.AppUser},Microsoft.AspNetCore.Identity.UI.Services.IEmailSender)">
+            <summary>
+            
+            </summary>
+            <param name="userManager"></param>
+            <param name="sender"></param>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.RegisterConfirmationModel.Email">
+            <summary />
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.RegisterConfirmationModel.DisplayConfirmAccountLink">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.RegisterConfirmationModel.EmailConfirmationUrl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.RegisterConfirmationModel.OnGetAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.ResetPasswordModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.ResetPasswordModel.#ctor(Microsoft.AspNetCore.Identity.UserManager{Domain.App.Identity.AppUser})">
+            <summary>
+            
+            </summary>
+            <param name="userManager"></param>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ResetPasswordModel.Input">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.ResetPasswordModel.InputModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ResetPasswordModel.InputModel.Email">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ResetPasswordModel.InputModel.Password">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ResetPasswordModel.InputModel.ConfirmPassword">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ResetPasswordModel.InputModel.Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.ResetPasswordModel.OnGet(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.ResetPasswordModel.OnPostAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.ResetPasswordConfirmationModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.ResetPasswordConfirmationModel.OnGet">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.ErrorModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.ErrorModel.RequestId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.ErrorModel.ShowRequestId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.ErrorModel.OnGet">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WebApp.Controllers.BalanceController">
+            <summary>
+            Custom contoller for balances
+            </summary>
+        </member>
+        <member name="M:WebApp.Controllers.BalanceController.#ctor(DAL.App.EF.AppDbContext,Contracts.BLL.App.IAppBLL)">
+            <summary>
+            constructor
+            </summary>
+            <param name="ctx"></param>
+            <param name="bll"></param>
+        </member>
+        <member name="M:WebApp.Controllers.BalanceController.Index">
+            <summary>
+            Show balances for the logged in user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.BalanceController.Details(System.Nullable{System.Guid})">
+            <summary>
+            get balance details
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.BalanceController.Create">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.BalanceController.Create(ee.itcollege.mrajam.BLL.App.DTO.Balance)">
+            <summary>
+            create balance object
+            </summary>
+            <param name="balance"></param>
+            <returns>form</returns>
+        </member>
+        <member name="M:WebApp.Controllers.BalanceController.Edit(System.Nullable{System.Guid})">
+            <summary>
+            edit balance object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.BalanceController.Edit(System.Guid,ee.itcollege.mrajam.BLL.App.DTO.Balance)">
+            <summary>
+            edit balance object
+            </summary>
+            <param name="id"></param>
+            <param name="balance"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.BalanceController.Delete(System.Nullable{System.Guid})">
+            <summary>
+            delete balance object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.BalanceController.DeleteConfirmed(System.Guid)">
+            <summary>
+            delete balance object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Controllers.DefaultToppingController">
+            <summary>
+            Custom contoller for defaultToppings
+            </summary>
+        </member>
+        <member name="M:WebApp.Controllers.DefaultToppingController.#ctor(DAL.App.EF.AppDbContext,Contracts.BLL.App.IAppBLL)">
+            <summary>
+            constructor
+            </summary>
+            <param name="ctx"></param>
+            <param name="bll"></param>
+        </member>
+        <member name="M:WebApp.Controllers.DefaultToppingController.Index">
+            <summary>
+            Show defaultToppings for the logged in user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.DefaultToppingController.Details(System.Nullable{System.Guid})">
+            <summary>
+            get defaultTopping details
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.DefaultToppingController.Create">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.DefaultToppingController.Create(ee.itcollege.mrajam.BLL.App.DTO.DefaultTopping)">
+            <summary>
+            create defaultTopping object
+            </summary>
+            <param name="defaultTopping"></param>
+            <returns>form</returns>
+        </member>
+        <member name="M:WebApp.Controllers.DefaultToppingController.Edit(System.Nullable{System.Guid})">
+            <summary>
+            edit defaultTopping object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.DefaultToppingController.Edit(System.Guid,ee.itcollege.mrajam.BLL.App.DTO.DefaultTopping)">
+            <summary>
+            edit defaultTopping object
+            </summary>
+            <param name="id"></param>
+            <param name="defaultTopping"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.DefaultToppingController.Delete(System.Nullable{System.Guid})">
+            <summary>
+            delete defaultTopping object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.DefaultToppingController.DeleteConfirmed(System.Guid)">
+            <summary>
+            delete defaultTopping object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Controllers.ExtraToppingsOnItemController">
+            <summary>
+            Custom contoller for extraToppingsOnItems
+            </summary>
+        </member>
+        <member name="M:WebApp.Controllers.ExtraToppingsOnItemController.#ctor(DAL.App.EF.AppDbContext,Contracts.BLL.App.IAppBLL)">
+            <summary>
+            constructor
+            </summary>
+            <param name="ctx"></param>
+            <param name="bll"></param>
+        </member>
+        <member name="M:WebApp.Controllers.ExtraToppingsOnItemController.Index">
+            <summary>
+            Show extraToppingsOnItems for the logged in user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.ExtraToppingsOnItemController.Details(System.Nullable{System.Guid})">
+            <summary>
+            get extraToppingsOnItem details
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.ExtraToppingsOnItemController.Create">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.ExtraToppingsOnItemController.Create(ee.itcollege.mrajam.BLL.App.DTO.ExtraToppingsOnItem)">
+            <summary>
+            create extraToppingsOnItem object
+            </summary>
+            <param name="extraToppingsOnItem"></param>
+            <returns>form</returns>
+        </member>
+        <member name="M:WebApp.Controllers.ExtraToppingsOnItemController.Edit(System.Nullable{System.Guid})">
+            <summary>
+            edit extraToppingsOnItem object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.ExtraToppingsOnItemController.Edit(System.Guid,ee.itcollege.mrajam.BLL.App.DTO.ExtraToppingsOnItem)">
+            <summary>
+            edit extraToppingsOnItem object
+            </summary>
+            <param name="id"></param>
+            <param name="extraToppingsOnItem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.ExtraToppingsOnItemController.Delete(System.Nullable{System.Guid})">
+            <summary>
+            delete extraToppingsOnItem object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.ExtraToppingsOnItemController.DeleteConfirmed(System.Guid)">
+            <summary>
+            delete extraToppingsOnItem object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Controllers.HomeController">
+            <summary>
+            home controller
+            </summary>
+        </member>
+        <member name="M:WebApp.Controllers.HomeController.#ctor(Microsoft.Extensions.Logging.ILogger{WebApp.Controllers.HomeController})">
+            <summary>
+            constructor
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:WebApp.Controllers.HomeController.Index">
+            <summary>
+            main view
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.HomeController.Privacy">
+            <summary>
+            privacy
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.HomeController.SetLanguage(System.String,System.String)">
+            <summary>
+            choose language
+            </summary>
+            <param name="culture"></param>
+            <param name="returnUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.HomeController.Error">
+            <summary>
+            error
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Controllers.ItemRowController">
+            <summary>
+            Custom contoller for itemRows
+            </summary>
+        </member>
+        <member name="M:WebApp.Controllers.ItemRowController.#ctor(DAL.App.EF.AppDbContext,Contracts.BLL.App.IAppBLL)">
+            <summary>
+            constructor
+            </summary>
+            <param name="ctx"></param>
+            <param name="bll"></param>
+        </member>
+        <member name="M:WebApp.Controllers.ItemRowController.Index">
+            <summary>
+            Show itemRows for the logged in user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.ItemRowController.Details(System.Nullable{System.Guid})">
+            <summary>
+            get itemRow details
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.ItemRowController.Create">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.ItemRowController.Create(ee.itcollege.mrajam.BLL.App.DTO.ItemRow)">
+            <summary>
+            create itemRow object
+            </summary>
+            <param name="itemRow"></param>
+            <returns>form</returns>
+        </member>
+        <member name="M:WebApp.Controllers.ItemRowController.Edit(System.Nullable{System.Guid})">
+            <summary>
+            edit itemRow object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.ItemRowController.Edit(System.Guid,ee.itcollege.mrajam.BLL.App.DTO.ItemRow)">
+            <summary>
+            edit itemRow object
+            </summary>
+            <param name="id"></param>
+            <param name="itemRow"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.ItemRowController.Delete(System.Nullable{System.Guid})">
+            <summary>
+            delete itemRow object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.ItemRowController.DeleteConfirmed(System.Guid)">
+            <summary>
+            delete itemRow object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Controllers.LangStrsController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Controllers.LangStrsController.#ctor(DAL.App.EF.AppDbContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:WebApp.Controllers.LangStrsController.Index">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.LangStrsController.Details(System.Nullable{System.Guid})">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.LangStrsController.Create">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.LangStrsController.Create(Domain.App.LangStr)">
+            <summary>
+            
+            </summary>
+            <param name="langStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.LangStrsController.Edit(System.Nullable{System.Guid})">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.LangStrsController.Edit(System.Guid,Domain.App.LangStr)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="langStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.LangStrsController.Delete(System.Nullable{System.Guid})">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.LangStrsController.DeleteConfirmed(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Controllers.LangStrTranslationsController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Controllers.LangStrTranslationsController.#ctor(DAL.App.EF.AppDbContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:WebApp.Controllers.LangStrTranslationsController.Index">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.LangStrTranslationsController.Details(System.Nullable{System.Guid})">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.LangStrTranslationsController.Create">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.LangStrTranslationsController.Create(Domain.App.LangStrTranslation)">
+            <summary>
+            
+            </summary>
+            <param name="langStrTranslation"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.LangStrTranslationsController.Edit(System.Nullable{System.Guid})">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.LangStrTranslationsController.Edit(System.Guid,Domain.App.LangStrTranslation)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="langStrTranslation"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.LangStrTranslationsController.Delete(System.Nullable{System.Guid})">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.LangStrTranslationsController.DeleteConfirmed(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Controllers.OrderController">
+            <summary>
+            Custom contoller for orders
+            </summary>
+        </member>
+        <member name="M:WebApp.Controllers.OrderController.#ctor(DAL.App.EF.AppDbContext,Contracts.BLL.App.IAppBLL)">
+            <summary>
+            constructor
+            </summary>
+            <param name="ctx"></param>
+            <param name="bll"></param>
+        </member>
+        <member name="M:WebApp.Controllers.OrderController.Index">
+            <summary>
+            Show orders for the logged in user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.OrderController.Details(System.Nullable{System.Guid})">
+            <summary>
+            get order details
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.OrderController.Create">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.OrderController.Create(ee.itcollege.mrajam.BLL.App.DTO.Order)">
+            <summary>
+            create order object
+            </summary>
+            <param name="order"></param>
+            <returns>form</returns>
+        </member>
+        <member name="M:WebApp.Controllers.OrderController.Edit(System.Nullable{System.Guid})">
+            <summary>
+            edit order object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.OrderController.Edit(System.Guid,ee.itcollege.mrajam.BLL.App.DTO.Order)">
+            <summary>
+            edit order object
+            </summary>
+            <param name="id"></param>
+            <param name="order"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.OrderController.Delete(System.Nullable{System.Guid})">
+            <summary>
+            delete order object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.OrderController.DeleteConfirmed(System.Guid)">
+            <summary>
+            delete order object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Controllers.OrderRowController">
+            <summary>
+            Custom contoller for orderRows
+            </summary>
+        </member>
+        <member name="M:WebApp.Controllers.OrderRowController.#ctor(DAL.App.EF.AppDbContext,Contracts.BLL.App.IAppBLL)">
+            <summary>
+            constructor
+            </summary>
+            <param name="ctx"></param>
+            <param name="bll"></param>
+        </member>
+        <member name="M:WebApp.Controllers.OrderRowController.Index">
+            <summary>
+            Show orderRows for the logged in user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.OrderRowController.Details(System.Nullable{System.Guid})">
+            <summary>
+            get orderRow details
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.OrderRowController.Create">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.OrderRowController.Create(ee.itcollege.mrajam.BLL.App.DTO.OrderRow)">
+            <summary>
+            create orderRow object
+            </summary>
+            <param name="orderRow"></param>
+            <returns>form</returns>
+        </member>
+        <member name="M:WebApp.Controllers.OrderRowController.Edit(System.Nullable{System.Guid})">
+            <summary>
+            edit orderRow object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.OrderRowController.Edit(System.Guid,ee.itcollege.mrajam.BLL.App.DTO.OrderRow)">
+            <summary>
+            edit orderRow object
+            </summary>
+            <param name="id"></param>
+            <param name="orderRow"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.OrderRowController.Delete(System.Nullable{System.Guid})">
+            <summary>
+            delete orderRow object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.OrderRowController.DeleteConfirmed(System.Guid)">
+            <summary>
+            delete orderRow object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Controllers.PaymentController">
+            <summary>
+            Custom contoller for payments
+            </summary>
+        </member>
+        <member name="M:WebApp.Controllers.PaymentController.#ctor(DAL.App.EF.AppDbContext,Contracts.BLL.App.IAppBLL)">
+            <summary>
+            constructor
+            </summary>
+            <param name="ctx"></param>
+            <param name="bll"></param>
+        </member>
+        <member name="M:WebApp.Controllers.PaymentController.Index">
+            <summary>
+            Show payments for the logged in user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PaymentController.Details(System.Nullable{System.Guid})">
+            <summary>
+            get payment details
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PaymentController.Create">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PaymentController.Create(ee.itcollege.mrajam.BLL.App.DTO.Payment)">
+            <summary>
+            create payment object
+            </summary>
+            <param name="payment"></param>
+            <returns>form</returns>
+        </member>
+        <member name="M:WebApp.Controllers.PaymentController.Edit(System.Nullable{System.Guid})">
+            <summary>
+            edit payment object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PaymentController.Edit(System.Guid,ee.itcollege.mrajam.BLL.App.DTO.Payment)">
+            <summary>
+            edit payment object
+            </summary>
+            <param name="id"></param>
+            <param name="payment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PaymentController.Delete(System.Nullable{System.Guid})">
+            <summary>
+            delete payment object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PaymentController.DeleteConfirmed(System.Guid)">
+            <summary>
+            delete payment object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Controllers.PersonController">
+            <summary>
+            Custom contoller for persons
+            </summary>
+        </member>
+        <member name="M:WebApp.Controllers.PersonController.#ctor(DAL.App.EF.AppDbContext,Contracts.BLL.App.IAppBLL)">
+            <summary>
+            constructor
+            </summary>
+            <param name="ctx"></param>
+            <param name="bll"></param>
+        </member>
+        <member name="M:WebApp.Controllers.PersonController.Index">
+            <summary>
+            Show persons for the logged in user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PersonController.Details(System.Nullable{System.Guid})">
+            <summary>
+            get person details
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PersonController.Create">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PersonController.Create(ee.itcollege.mrajam.BLL.App.DTO.Person)">
+            <summary>
+            create person object
+            </summary>
+            <param name="person"></param>
+            <returns>form</returns>
+        </member>
+        <member name="M:WebApp.Controllers.PersonController.Edit(System.Nullable{System.Guid})">
+            <summary>
+            edit person object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PersonController.Edit(System.Guid,ee.itcollege.mrajam.BLL.App.DTO.Person)">
+            <summary>
+            edit person object
+            </summary>
+            <param name="id"></param>
+            <param name="person"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PersonController.Delete(System.Nullable{System.Guid})">
+            <summary>
+            delete person object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PersonController.DeleteConfirmed(System.Guid)">
+            <summary>
+            delete person object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Controllers.PizzaNameController">
+            <summary>
+            Custom contoller for pizzaNames
+            </summary>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaNameController.#ctor(DAL.App.EF.AppDbContext,Contracts.BLL.App.IAppBLL)">
+            <summary>
+            constructor
+            </summary>
+            <param name="ctx"></param>
+            <param name="bll"></param>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaNameController.Index">
+            <summary>
+            Show pizzaNames for the logged in user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaNameController.Details(System.Nullable{System.Guid})">
+            <summary>
+            get pizzaName details
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaNameController.Create">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaNameController.Create(PublicApi.DTO.v1.PizzaNameCreateEditDTO)">
+            <summary>
+            create pizzaName object
+            </summary>
+            <param name="pizzaName"></param>
+            <returns>form</returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaNameController.Edit(System.Nullable{System.Guid})">
+            <summary>
+            edit pizzaName object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaNameController.Edit(System.Guid,PublicApi.DTO.v1.PizzaNameCreateEditDTO)">
+            <summary>
+            edit pizzaName object
+            </summary>
+            <param name="id"></param>
+            <param name="pizzaName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaNameController.Delete(System.Nullable{System.Guid})">
+            <summary>
+            delete pizzaName object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaNameController.DeleteConfirmed(System.Guid)">
+            <summary>
+            delete pizzaName object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Controllers.PizzaOrderController">
+            <summary>
+            Custom contoller for pizzaOrders
+            </summary>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaOrderController.#ctor(DAL.App.EF.AppDbContext,Contracts.BLL.App.IAppBLL)">
+            <summary>
+            constructor
+            </summary>
+            <param name="ctx"></param>
+            <param name="bll"></param>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaOrderController.Index">
+            <summary>
+            Show pizzaOrders for the logged in user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaOrderController.Details(System.Nullable{System.Guid})">
+            <summary>
+            get pizzaOrder details
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaOrderController.Create">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaOrderController.Create(ee.itcollege.mrajam.BLL.App.DTO.PizzaOrder)">
+            <summary>
+            create pizzaOrder object
+            </summary>
+            <param name="pizzaOrder"></param>
+            <returns>form</returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaOrderController.Edit(System.Nullable{System.Guid})">
+            <summary>
+            edit pizzaOrder object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaOrderController.Edit(System.Guid,ee.itcollege.mrajam.BLL.App.DTO.PizzaOrder)">
+            <summary>
+            edit pizzaOrder object
+            </summary>
+            <param name="id"></param>
+            <param name="pizzaOrder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaOrderController.Delete(System.Nullable{System.Guid})">
+            <summary>
+            delete pizzaOrder object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaOrderController.DeleteConfirmed(System.Guid)">
+            <summary>
+            delete pizzaOrder object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Controllers.PizzaSizeController">
+            <summary>
+            Custom contoller for pizzaSizes
+            </summary>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaSizeController.#ctor(DAL.App.EF.AppDbContext,Contracts.BLL.App.IAppBLL)">
+            <summary>
+            constructor
+            </summary>
+            <param name="ctx"></param>
+            <param name="bll"></param>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaSizeController.Index">
+            <summary>
+            Show pizzaSizes for the logged in user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaSizeController.Details(System.Nullable{System.Guid})">
+            <summary>
+            get pizzaSize details
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaSizeController.Create">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaSizeController.Create(ee.itcollege.mrajam.BLL.App.DTO.PizzaSize)">
+            <summary>
+            create pizzaSize object
+            </summary>
+            <param name="pizzaSize"></param>
+            <returns>form</returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaSizeController.Edit(System.Nullable{System.Guid})">
+            <summary>
+            edit pizzaSize object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaSizeController.Edit(System.Guid,ee.itcollege.mrajam.BLL.App.DTO.PizzaSize)">
+            <summary>
+            edit pizzaSize object
+            </summary>
+            <param name="id"></param>
+            <param name="pizzaSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaSizeController.Delete(System.Nullable{System.Guid})">
+            <summary>
+            delete pizzaSize object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaSizeController.DeleteConfirmed(System.Guid)">
+            <summary>
+            delete pizzaSize object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Controllers.PizzaTypeController">
+            <summary>
+            Custom contoller for pizzaTypes
+            </summary>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaTypeController.#ctor(DAL.App.EF.AppDbContext,Contracts.BLL.App.IAppBLL)">
+            <summary>
+            constructor
+            </summary>
+            <param name="ctx"></param>
+            <param name="bll"></param>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaTypeController.Index">
+            <summary>
+            Show pizzaTypes for the logged in user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaTypeController.Details(System.Nullable{System.Guid})">
+            <summary>
+            get pizzaType details
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaTypeController.Create">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaTypeController.Create(ee.itcollege.mrajam.BLL.App.DTO.PizzaType)">
+            <summary>
+            create pizzaType object
+            </summary>
+            <param name="pizzaType"></param>
+            <returns>form</returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaTypeController.Edit(System.Nullable{System.Guid})">
+            <summary>
+            edit pizzaType object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaTypeController.Edit(System.Guid,ee.itcollege.mrajam.BLL.App.DTO.PizzaType)">
+            <summary>
+            edit pizzaType object
+            </summary>
+            <param name="id"></param>
+            <param name="pizzaType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaTypeController.Delete(System.Nullable{System.Guid})">
+            <summary>
+            delete pizzaType object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.PizzaTypeController.DeleteConfirmed(System.Guid)">
+            <summary>
+            delete pizzaType object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Controllers.ToppingController">
+            <summary>
+            Custom contoller for toppings
+            </summary>
+        </member>
+        <member name="M:WebApp.Controllers.ToppingController.#ctor(DAL.App.EF.AppDbContext,Contracts.BLL.App.IAppBLL)">
+            <summary>
+            constructor
+            </summary>
+            <param name="ctx"></param>
+            <param name="bll"></param>
+        </member>
+        <member name="M:WebApp.Controllers.ToppingController.Index">
+            <summary>
+            Show toppings for the logged in user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.ToppingController.Details(System.Nullable{System.Guid})">
+            <summary>
+            get topping details
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.ToppingController.Create">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.ToppingController.Create(ee.itcollege.mrajam.BLL.App.DTO.Topping)">
+            <summary>
+            create topping object
+            </summary>
+            <param name="topping"></param>
+            <returns>form</returns>
+        </member>
+        <member name="M:WebApp.Controllers.ToppingController.Edit(System.Nullable{System.Guid})">
+            <summary>
+            edit topping object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.ToppingController.Edit(System.Guid,ee.itcollege.mrajam.BLL.App.DTO.Topping)">
+            <summary>
+            edit topping object
+            </summary>
+            <param name="id"></param>
+            <param name="topping"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.ToppingController.Delete(System.Nullable{System.Guid})">
+            <summary>
+            delete topping object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp.Controllers.ToppingController.DeleteConfirmed(System.Guid)">
+            <summary>
+            delete topping object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Helpers.ConfigureSwaggerOptions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Helpers.ConfigureSwaggerOptions.#ctor(Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+            
+            </summary>
+            <param name="provider"></param>
+        </member>
+        <member name="M:WebApp.Helpers.ConfigureSwaggerOptions.Configure(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)">
+            <summary>
+            
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="T:WebApp.Helpers.UserNameProvider">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp.Helpers.UserNameProvider.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            
+            </summary>
+            <param name="httpContextAccessor"></param>
+        </member>
+        <member name="P:WebApp.Helpers.UserNameProvider.CurrentUserName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WebApp.Models.ErrorViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Models.ErrorViewModel.RequestId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.Models.ErrorViewModel.ShowRequestId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WebApp.Program">
+            <summary>
+            main program
+            </summary>
+        </member>
+        <member name="M:WebApp.Program.Main(System.String[])">
+            <summary>
+            main
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:WebApp.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            createhostbuilder
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Startup">
+            <summary>
+            startup
+            </summary>
+        </member>
+        <member name="M:WebApp.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            constructor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:WebApp.Startup.Configuration">
+            <summary>
+            config
+            </summary>
+        </member>
+        <member name="M:WebApp.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            config services
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:WebApp.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+            runtime config
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="provider"></param>
+        </member>
+        <member name="T:WebApp.ViewModels.BalanceCreateEditVM">
+            <summary>
+            BalanceCreateEditVM
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.BalanceCreateEditVM.Balance">
+            <summary>
+            Balance
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.BalanceCreateEditVM.Payment">
+            <summary>
+            Payment
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.BalanceCreateEditVM.Person">
+            <summary>
+            Person
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.BalanceCreateEditVM.AppUser">
+            <summary>
+            AppUser
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.BalanceCreateEditVM.PaymentSelectList">
+            <summary>
+            PaymentSelectList
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.BalanceCreateEditVM.PersonSelectList">
+            <summary>
+            PersonSelectList
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.BalanceCreateEditVM.AppUserSelectList">
+            <summary>
+            AppUserSelectList
+            </summary>
+        </member>
+        <member name="T:WebApp.ViewModels.DefaultToppingCreateEditVM">
+            <summary>
+            ExtraToppingsOnItemCreateEditVM
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.DefaultToppingCreateEditVM.DefaultTopping">
+            <summary>
+            ExtraToppingsOnItem
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.DefaultToppingCreateEditVM.DefaultToppingSelectList">
+            <summary>
+            ToppingSelectList
+            </summary>
+        </member>
+        <member name="T:WebApp.ViewModels.ExtraToppingsOnItemCreateEditVM">
+            <summary>
+            ExtraToppingsOnItemCreateEditVM
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.ExtraToppingsOnItemCreateEditVM.ExtraToppingsOnItem">
+            <summary>
+            ExtraToppingsOnItem
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.ExtraToppingsOnItemCreateEditVM.ItemRow">
+            <summary>
+            ItemRow
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.ExtraToppingsOnItemCreateEditVM.Topping">
+            <summary>
+            Topping
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.ExtraToppingsOnItemCreateEditVM.ItemRowSelectList">
+            <summary>
+            ItemRowSelectList
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.ExtraToppingsOnItemCreateEditVM.ToppingSelectList">
+            <summary>
+            ToppingSelectList
+            </summary>
+        </member>
+        <member name="T:WebApp.ViewModels.ItemRowCreateEditVM">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.ItemRowCreateEditVM.ItemRow">
+            <summary>
+            ItemRow
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.ItemRowCreateEditVM.PizzaOrder">
+            <summary>
+            PizzaOrder
+            </summary>
+        </member>
+        <member name="T:WebApp.ViewModels.OrderRowCreateEditVM">
+            <summary>
+            OrderRowCreateEditVM
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.OrderRowCreateEditVM.OrderRow">
+            <summary>
+            OrderRow
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.OrderRowCreateEditVM.ExtraToppingsOnItem">
+            <summary>
+            ExtraToppingsOnItem
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.OrderRowCreateEditVM.ExtraToppingsOnItemSelectList">
+            <summary>
+            ExtraToppingsOnItemSelectList
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.OrderRowCreateEditVM.ItemRow">
+            <summary>
+            ItemRow
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.OrderRowCreateEditVM.ItemRowSelectList">
+            <summary>
+            ItemRowSelectList
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.OrderRowCreateEditVM.Order">
+            <summary>
+            Order
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.OrderRowCreateEditVM.OrderSelectList">
+            <summary>
+            OrderSelectList
+            </summary>
+        </member>
+        <member name="T:WebApp.ViewModels.PaymentCreateEditVM">
+            <summary>
+            PaymentCreateEditVM
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.PaymentCreateEditVM.Payment">
+            <summary>
+            Payment
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.PaymentCreateEditVM.Order">
+            <summary>
+            Order
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.PaymentCreateEditVM.OrderSelectList">
+            <summary>
+            OrderSelectList
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.PaymentCreateEditVM.PaymentMethod">
+            <summary>
+            PaymentMethod
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.PaymentCreateEditVM.PaymentMethodSelectList">
+            <summary>
+            PaymentMethodSelectList
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.PaymentCreateEditVM.AppUser">
+            <summary>
+            AppUser
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.PaymentCreateEditVM.AppUserSelectList">
+            <summary>
+            AppUserSelectList
+            </summary>
+        </member>
+        <member name="T:WebApp.ViewModels.PizzaOrderCreateEditVM">
+            <summary>
+            PizzaOrderCreateEditVM
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.PizzaOrderCreateEditVM.PizzaOrder">
+            <summary>
+            PizzaOrder
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.PizzaOrderCreateEditVM.PizzaName">
+            <summary>
+            PizzaName
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.PizzaOrderCreateEditVM.PizzaNameSelectList">
+            <summary>
+            PizzaNameSelectList
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.PizzaOrderCreateEditVM.PizzaSize">
+            <summary>
+            PizzaSize
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.PizzaOrderCreateEditVM.PizzaSizeSelectList">
+            <summary>
+            PizzaSizeSelectList
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.PizzaOrderCreateEditVM.PizzaType">
+            <summary>
+            PizzaType
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.PizzaOrderCreateEditVM.PizzaTypeSelectList">
+            <summary>
+            PizzaTypeSelectList
+            </summary>
+        </member>
+        <member name="T:WebApp.ViewModels.UserOrderCreateEditVM">
+            <summary>
+            UserOrderCreateEditVM
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.UserOrderCreateEditVM.Order">
+            <summary>
+            Order
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.UserOrderCreateEditVM.AppUser">
+            <summary>
+            AppUser
+            </summary>
+        </member>
+        <member name="P:WebApp.ViewModels.UserOrderCreateEditVM.UserOrderSelectList">
+            <summary>
+            UserOrderSelectList
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,15 @@
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.App\bin\Release\netstandard2.1\Contracts.DAL.App.deps.json
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.App\bin\Release\netstandard2.1\Contracts.DAL.App.dll
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.App\bin\Release\netstandard2.1\Contracts.DAL.App.pdb
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.App\bin\Release\netstandard2.1\DAL.App.DTO.dll
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.App\bin\Release\netstandard2.1\DAL.App.DTO.pdb
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.App\obj\Release\netstandard2.1\Contracts.DAL.App.csprojAssemblyReference.cache
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.App\obj\Release\netstandard2.1\Contracts.DAL.App.AssemblyInfoInputs.cache
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.App\obj\Release\netstandard2.1\Contracts.DAL.App.AssemblyInfo.cs
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.App\obj\Release\netstandard2.1\Contracts.DAL.App.csproj.CopyComplete
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.App\obj\Release\netstandard2.1\Contracts.DAL.App.dll
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.App\obj\Release\netstandard2.1\Contracts.DAL.App.pdb
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.App\bin\Release\netstandard2.1\ee.itcollege.mrajam.Contracts.DAL.Base.dll
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.App\bin\Release\netstandard2.1\ee.itcollege.mrajam.Contracts.Domain.dll
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.App\bin\Release\netstandard2.1\ee.itcollege.mrajam.Contracts.DAL.Base.pdb
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.App\bin\Release\netstandard2.1\ee.itcollege.mrajam.Contracts.Domain.pdb

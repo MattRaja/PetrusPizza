@@ -1,0 +1,17 @@
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\BLL.App.DTO\obj\Release\netstandard2.1\BLL.App.DTO.csprojAssemblyReference.cache
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\BLL.App.DTO\obj\Release\netstandard2.1\BLL.App.DTO.AssemblyInfoInputs.cache
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\BLL.App.DTO\obj\Release\netstandard2.1\BLL.App.DTO.AssemblyInfo.cs
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\BLL.App.DTO\obj\Release\netstandard2.1\BLL.App.DTO.csproj.CopyComplete
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\BLL.App.DTO\bin\Release\netstandard2.1\ee.itcollege.mrajam.BLL.App.DTO.deps.json
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\BLL.App.DTO\bin\Release\netstandard2.1\ee.itcollege.mrajam.BLL.App.DTO.dll
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\BLL.App.DTO\bin\Release\netstandard2.1\ee.itcollege.mrajam.BLL.App.DTO.pdb
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\BLL.App.DTO\bin\Release\netstandard2.1\ee.itcollege.mrajam.Contracts.DAL.Base.dll
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\BLL.App.DTO\bin\Release\netstandard2.1\ee.itcollege.mrajam.Contracts.Domain.dll
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\BLL.App.DTO\bin\Release\netstandard2.1\ee.itcollege.mrajam.Resources.dll
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\BLL.App.DTO\bin\Release\netstandard2.1\ee.itcollege.mrajam.Contracts.DAL.Base.pdb
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\BLL.App.DTO\bin\Release\netstandard2.1\ee.itcollege.mrajam.Resources.pdb
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\BLL.App.DTO\bin\Release\netstandard2.1\ee.itcollege.mrajam.Contracts.Domain.pdb
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\BLL.App.DTO\bin\Release\netstandard2.1\en\ee.itcollege.mrajam.Resources.resources.dll
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\BLL.App.DTO\bin\Release\netstandard2.1\et\ee.itcollege.mrajam.Resources.resources.dll
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\BLL.App.DTO\obj\Release\netstandard2.1\ee.itcollege.mrajam.BLL.App.DTO.dll
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\BLL.App.DTO\obj\Release\netstandard2.1\ee.itcollege.mrajam.BLL.App.DTO.pdb

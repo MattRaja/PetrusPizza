@@ -1,0 +1,44 @@
+<template>
+    <require from="../../components/alert"></require>
+
+    <alert alert-data.bind="_alert"></alert>
+
+    <h1>Index Pizza Names</h1>
+    <p>
+        <a route-href="route: pizza-names-create; params.bind: {}">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Name of Pizza
+                </th>
+                <th>
+                    Price
+                </th>
+                <th>
+                    OrderCount
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr repeat.for="pizzaName of _pizzaNames">
+                <td>
+                    ${_pizza-names.NameOfPizza}
+                </td>
+                <td>
+                    ${_pizza-names.Price}
+                </td>
+                <td>
+                    ${_pizza-names.OrderCount}
+                </td>
+                <td>
+                    <a route-href="route: pizza-names-edit; params.bind: { id: pizza-names.id }">Edit</a> |
+                    <a route-href="route: pizza-names-details; params.bind: { id: pizza-names.id }">Details</a> |
+                    <a route-href="route: pizza-names-delete; params.bind: { id: pizza-names.id }">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</template>

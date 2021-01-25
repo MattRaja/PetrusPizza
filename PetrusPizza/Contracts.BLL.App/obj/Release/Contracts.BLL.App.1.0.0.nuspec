@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Contracts.BLL.App</id>
+    <version>1.0.0</version>
+    <authors>Contracts.BLL.App</authors>
+    <owners>Contracts.BLL.App</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="ee.itcollege.mrajam.BLL.App.DTO" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="ee.itcollege.mrajam.Contracts.BLL.Base" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Contracts.DAL.App" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Domain.App" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="PublicApi.DTO.v1" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="ee.itcollege.mrajam.BLL.Base" version="1.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.BLL.App\bin\Release\netstandard2.1\Contracts.BLL.App.dll" target="lib\netstandard2.1\Contracts.BLL.App.dll" />
+  </files>
+</package>

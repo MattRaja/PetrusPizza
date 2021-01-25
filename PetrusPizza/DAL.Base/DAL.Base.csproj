@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <AssemblyName>ee.itcollege.mrajam.DAL.Base</AssemblyName>
+        <RootNamespace>ee.itcollege.mrajam.DAL.Base</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BLL.App.DTO\BLL.App.DTO.csproj" />
+      <ProjectReference Include="..\Contracts.DAL.Base\Contracts.DAL.Base.csproj" />
+        <PackageReference Include="AutoMapper" Version="9.0.0" />
+        <PackageReference Include="System.Text.Json" Version="4.7.2" />
+        <ProjectReference Include="..\Domain\Contracts.Domain\Contracts.Domain.csproj" />
+
+    </ItemGroup>
+
+
+</Project>

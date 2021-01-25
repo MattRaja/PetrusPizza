@@ -1,0 +1,64 @@
+@model WebApp.ViewModels.OrderRowCreateEditVM
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="OrderRow.OrderId" class="control-label"></label>
+                <select asp-for="OrderRow.OrderId" class ="form-control" asp-items="Model.OrderSelectList"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrderRow.ItemRowId" class="control-label"></label>
+                <select asp-for="OrderRow.ItemRowId" class ="form-control" asp-items="Model.ItemRowSelectList"></select>
+            </div>
+            @* <div class="form-group"> *@
+            @*     <label asp-for="OrderRow.ExtraToppingsOnItemNameId" class="control-label"></label> *@
+            @*     <select asp-for="OrderRow.ExtraToppingsOnItemNameId" class ="form-control" asp-items="Model.ExtraToppingsOnItemSelectList"></select> *@
+            @* </div> *@
+            @* <div class="form-group"> *@
+            @*     <label asp-for="OrderRow.Amount" class="control-label"></label> *@
+            @*     <input asp-for="OrderRow.Amount" class="form-control" /> *@
+            @*     <span asp-validation-for="OrderRow.Amount" class="text-danger"></span> *@
+            @* </div> *@
+            <div class="form-group">
+                <label asp-for="OrderRow.Price" class="control-label"></label>
+                <input asp-for="OrderRow.Price" class="form-control" />
+                <span asp-validation-for="OrderRow.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrderRow.VAT" class="control-label"></label>
+                <input asp-for="OrderRow.VAT" class="form-control" />
+                <span asp-validation-for="OrderRow.VAT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrderRow.Sum" class="control-label"></label>
+                <input asp-for="OrderRow.Sum" class="form-control" />
+                <span asp-validation-for="OrderRow.Sum" class="text-danger"></span>
+            </div>
+<div class="form-group">
+    <label asp-for="OrderRow.SumWithVAT" class="control-label"></label>
+    <input asp-for="OrderRow.SumWithVAT" class="form-control" />
+    <span asp-validation-for="OrderRow.SumWithVAT" class="text-danger"></span>
+</div>
+
+@*<div class="form-group">
+                <label asp-for="OrderRow.CreatedBy" class="control-label"></label>
+                <input asp-for="OrderRow.CreatedBy" class="form-control" />
+                <span asp-validation-for="OrderRow.CreatedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrderRow.CreatedAt" class="control-label"></label>
+                <input asp-for="OrderRow.CreatedAt" class="form-control" />
+                <span asp-validation-for="OrderRow.CreatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrderRow.ChangedBy" class="control-label"></label>
+                <input asp-for="OrderRow.ChangedBy" class="form-control" />
+                <span asp-validation-for="OrderRow.ChangedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrderRow.ChangedAt" class="control-label"></label>
+                <input asp-for="OrderRow.ChangedAt" class="form-control" />
+                <span asp-validation-for="OrderRow.ChangedAt" class="text-danger"></span>
+            </div>*@
+<div class="form-group">
+    <input type="submit" value="Create" class="btn btn-primary" />
+</div>

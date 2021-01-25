@@ -1,0 +1,43 @@
+<template>
+    <require from="../../components/alert"></require>
+
+    <alert alert-data.bind="_alert"></alert>
+
+
+    <h1>Details</h1>
+
+    <div>
+        <h4>Payment</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                PaymentMethodNameId
+            </dt>
+            <dd class="col-sm-10">
+                ${_payment.PaymentMethodNameId}
+            </dd>
+            <dt class="col-sm-2">
+                UserPaymentId
+            </dt>
+            <dd class="col-sm-10">
+                ${_payment.UserPaymentId}
+            </dd>
+            <dt class="col-sm-2">
+                PaymentDate
+            </dt>
+            <dd class="col-sm-10">
+                ${_payment.PaymentDate}
+            </dd>
+            <dt class="col-sm-2">
+                PaymentAmount
+            </dt>
+            <dd class="col-sm-10">
+                ${_payment.PaymentAmount}
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a route-href="route: payments-edit; params.bind: { id: _payments.id }">Edit</a> |
+        <a route-href="route: payments-index; params.bind: { }">Back to List</a>
+    </div>
+</template>

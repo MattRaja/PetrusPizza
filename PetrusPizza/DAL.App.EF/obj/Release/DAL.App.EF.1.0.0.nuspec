@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>DAL.App.EF</id>
+    <version>1.0.0</version>
+    <authors>DAL.App.EF</authors>
+    <owners>DAL.App.EF</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="Contracts.DAL.App" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="ee.itcollege.mrajam.DAL.Base.EF" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Domain.App" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="PublicApi.DTO.v1" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Identity.EntityFrameworkCore" version="3.1.5" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="3.1.5" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="3.1.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\DAL.App.EF\bin\Release\netstandard2.1\DAL.App.EF.dll" target="lib\netstandard2.1\DAL.App.EF.dll" />
+  </files>
+</package>

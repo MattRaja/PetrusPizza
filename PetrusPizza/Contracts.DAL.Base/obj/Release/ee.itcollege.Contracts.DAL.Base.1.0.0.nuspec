@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ee.itcollege.Contracts.DAL.Base</id>
+    <version>1.0.0</version>
+    <authors>ee.itcollege.Contracts.DAL.Base</authors>
+    <owners>ee.itcollege.Contracts.DAL.Base</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="ee.itcollege.Contracts.Domain" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Identity.Stores" version="3.1.5" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.Base\bin\Release\netstandard2.1\ee.itcollege.Contracts.DAL.Base.dll" target="lib\netstandard2.1\ee.itcollege.Contracts.DAL.Base.dll" />
+  </files>
+</package>

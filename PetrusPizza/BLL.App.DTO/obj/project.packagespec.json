@@ -1,0 +1,62 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\BLL.App.DTO\\BLL.App.DTO.csproj",
+    "projectName": "ee.itcollege.mrajam.BLL.App.DTO",
+    "projectPath": "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\BLL.App.DTO\\BLL.App.DTO.csproj",
+    "outputPath": "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\BLL.App.DTO\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netstandard2.1"
+    ],
+    "sources": {
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "projectReferences": {
+          "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\Contracts.DAL.Base\\Contracts.DAL.Base.csproj": {
+            "projectPath": "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\Contracts.DAL.Base\\Contracts.DAL.Base.csproj"
+          },
+          "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\Resources\\Resources.csproj": {
+            "projectPath": "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\Resources\\Resources.csproj"
+          }
+        }
+      }
+    }
+  },
+  "frameworks": {
+    "netstandard2.1": {
+      "dependencies": {
+        "System.ComponentModel.Annotations": {
+          "target": "Package",
+          "version": "[4.7.0, )"
+        },
+        "System.Text.Json": {
+          "target": "Package",
+          "version": "[4.7.2, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "NETStandard.Library": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+    }
+  }
+}

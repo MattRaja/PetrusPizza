@@ -1,0 +1,13 @@
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\DAL.App.DTO\bin\Release\netstandard2.1\DAL.App.DTO.deps.json
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\DAL.App.DTO\bin\Release\netstandard2.1\DAL.App.DTO.dll
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\DAL.App.DTO\bin\Release\netstandard2.1\DAL.App.DTO.pdb
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\DAL.App.DTO\obj\Release\netstandard2.1\DAL.App.DTO.csprojAssemblyReference.cache
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\DAL.App.DTO\obj\Release\netstandard2.1\DAL.App.DTO.AssemblyInfoInputs.cache
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\DAL.App.DTO\obj\Release\netstandard2.1\DAL.App.DTO.AssemblyInfo.cs
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\DAL.App.DTO\obj\Release\netstandard2.1\DAL.App.DTO.csproj.CopyComplete
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\DAL.App.DTO\obj\Release\netstandard2.1\DAL.App.DTO.dll
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\DAL.App.DTO\obj\Release\netstandard2.1\DAL.App.DTO.pdb
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\DAL.App.DTO\bin\Release\netstandard2.1\ee.itcollege.mrajam.Contracts.DAL.Base.dll
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\DAL.App.DTO\bin\Release\netstandard2.1\ee.itcollege.mrajam.Contracts.Domain.dll
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\DAL.App.DTO\bin\Release\netstandard2.1\ee.itcollege.mrajam.Contracts.DAL.Base.pdb
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\DAL.App.DTO\bin\Release\netstandard2.1\ee.itcollege.mrajam.Contracts.Domain.pdb

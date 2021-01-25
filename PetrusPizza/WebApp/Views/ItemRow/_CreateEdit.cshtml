@@ -1,0 +1,36 @@
+@model WebApp.ViewModels.ItemRowCreateEditVM
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ItemRow.Amount" class="control-label"></label>
+                <input asp-for="ItemRow.Amount" class="form-control" />
+                <span asp-validation-for="ItemRow.Amount" class="text-danger"></span>
+            </div>
+<div class="form-group">
+    <label asp-for="ItemRow.PizzaOrderId" class="control-label"></label>
+    @*<select asp-for="ItemRow.PizzaOrderId" class ="form-control" asp-items="Model.PizzaOrderSelectList"></select>*@
+</div>
+
+@*<div class="form-group">
+                <label asp-for="ItemRow.CreatedBy" class="control-label"></label>
+                <input asp-for="ItemRow.CreatedBy" class="form-control" />
+                <span asp-validation-for="ItemRow.CreatedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ItemRow.CreatedAt" class="control-label"></label>
+                <input asp-for="ItemRow.CreatedAt" class="form-control" />
+                <span asp-validation-for="ItemRow.CreatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ItemRow.ChangedBy" class="control-label"></label>
+                <input asp-for="ItemRow.ChangedBy" class="form-control" />
+                <span asp-validation-for="ItemRow.ChangedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ItemRow.ChangedAt" class="control-label"></label>
+                <input asp-for="ItemRow.ChangedAt" class="form-control" />
+                <span asp-validation-for="ItemRow.ChangedAt" class="text-danger"></span>
+            </div>*@
+<div class="form-group">
+    <input type="submit" value="Create" class="btn btn-primary" />
+</div>

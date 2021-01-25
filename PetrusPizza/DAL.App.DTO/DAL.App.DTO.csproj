@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Contracts.DAL.Base\Contracts.DAL.Base.csproj" />
+      <ProjectReference Include="..\Domain\Contracts.Domain\Contracts.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="ee.itcollege.mrajam.Contracts.DAL.Base" Version="1.0.0" />
+      <PackageReference Include="ee.itcollege.mrajam.Contracts.Domain" Version="1.0.0" />
+    </ItemGroup>
+
+</Project>

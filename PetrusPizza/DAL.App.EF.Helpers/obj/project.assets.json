@@ -1,0 +1,61 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.1": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.1": []
+  },
+  "packageFolders": {
+    "C:\\Users\\NZXT\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\DAL.App.EF.Helpers\\DAL.App.EF.Helpers.csproj",
+      "projectName": "DAL.App.EF.Helpers",
+      "projectPath": "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\DAL.App.EF.Helpers\\DAL.App.EF.Helpers.csproj",
+      "packagesPath": "C:\\Users\\NZXT\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\DAL.App.EF.Helpers\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\NZXT\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\DAL.App.EF\\DAL.App.EF.csproj",
+    "projectName": "DAL.App.EF",
+    "projectPath": "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\DAL.App.EF\\DAL.App.EF.csproj",
+    "outputPath": "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\DAL.App.EF\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netstandard2.1"
+    ],
+    "sources": {
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "projectReferences": {
+          "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\Contracts.DAL.App\\Contracts.DAL.App.csproj": {
+            "projectPath": "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\Contracts.DAL.App\\Contracts.DAL.App.csproj"
+          },
+          "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\DAL.Base.EF\\DAL.Base.EF.csproj": {
+            "projectPath": "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\DAL.Base.EF\\DAL.Base.EF.csproj"
+          },
+          "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\Domain.App\\Domain.App.csproj": {
+            "projectPath": "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\Domain.App\\Domain.App.csproj"
+          },
+          "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\PublicApi.DTO.v1\\PublicApi.DTO.v1.csproj": {
+            "projectPath": "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\PublicApi.DTO.v1\\PublicApi.DTO.v1.csproj"
+          }
+        }
+      }
+    }
+  },
+  "frameworks": {
+    "netstandard2.1": {
+      "dependencies": {
+        "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[3.1.5, )"
+        },
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[3.1.5, )"
+        },
+        "Microsoft.EntityFrameworkCore.SqlServer": {
+          "target": "Package",
+          "version": "[3.1.3, )"
+        },
+        "ee.itcollege.mrajam.DAL.Base.EF": {
+          "target": "Package",
+          "version": "[1.0.0, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "NETStandard.Library": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+    }
+  }
+}

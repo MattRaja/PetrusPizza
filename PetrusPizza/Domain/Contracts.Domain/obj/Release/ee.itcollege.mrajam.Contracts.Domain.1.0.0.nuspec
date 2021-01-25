@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ee.itcollege.mrajam.Contracts.Domain</id>
+    <version>1.0.0</version>
+    <authors>ee.itcollege.mrajam.Contracts.Domain</authors>
+    <owners>ee.itcollege.mrajam.Contracts.Domain</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="Microsoft.AspNetCore.Identity.EntityFrameworkCore" version="3.1.5" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Domain\Contracts.Domain\bin\Release\netstandard2.1\ee.itcollege.mrajam.Contracts.Domain.dll" target="lib\netstandard2.1\ee.itcollege.mrajam.Contracts.Domain.dll" />
+  </files>
+</package>

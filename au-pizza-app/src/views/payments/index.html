@@ -1,0 +1,38 @@
+<template>
+    <require from="../../components/alert"></require>
+
+    <alert alert-data.bind="_alert"></alert>
+
+    <h1>Index Payments</h1>
+    <p>
+        <a route-href="route: payments-create; params.bind: {}">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    PaymentDate
+                </th>
+                <th>
+                    PaymentAmount
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr repeat.for="payment of _payments">
+                <td>
+                    ${_payments.PaymentDate}
+                </td>
+                <td>
+                    ${_payments.PaymentAmount}
+                </td>
+                <td>
+                    <a route-href="route: payments-edit; params.bind: { id: payment.id }">Edit</a> |
+                    <a route-href="route: payments-details; params.bind: { id: payment.id }">Details</a> |
+                    <a route-href="route: payments-delete; params.bind: { id: payment.id }">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</template>

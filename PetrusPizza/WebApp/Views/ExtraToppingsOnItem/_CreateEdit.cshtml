@@ -1,0 +1,40 @@
+@model WebApp.ViewModels.ExtraToppingsOnItemCreateEditVM
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ExtraToppingsOnItem.ToppingNameId" class="control-label"></label>
+                <select asp-for="ExtraToppingsOnItem.ToppingNameId" class ="form-control" asp-items="Model.ToppingSelectList"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="ExtraToppingsOnItem.ItemRowId" class="control-label"></label>
+                <select asp-for="ExtraToppingsOnItem.ItemRowId" class ="form-control" asp-items="Model.ItemRowSelectList"></select>
+            </div>
+<div class="form-group">
+    <label asp-for="ExtraToppingsOnItem.Price" class="control-label"></label>
+    <input asp-for="ExtraToppingsOnItem.Price" class="form-control" />
+    <span asp-validation-for="ExtraToppingsOnItem.Price" class="text-danger"></span>
+</div>
+
+@*<div class="form-group">
+                <label asp-for="ExtraToppingsOnItem.CreatedBy" class="control-label"></label>
+                <input asp-for="ExtraToppingsOnItem.CreatedBy" class="form-control" />
+                <span asp-validation-for="ExtraToppingsOnItem.CreatedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ExtraToppingsOnItem.CreatedAt" class="control-label"></label>
+                <input asp-for="ExtraToppingsOnItem.CreatedAt" class="form-control" />
+                <span asp-validation-for="ExtraToppingsOnItem.CreatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ExtraToppingsOnItem.ChangedBy" class="control-label"></label>
+                <input asp-for="ExtraToppingsOnItem.ChangedBy" class="form-control" />
+                <span asp-validation-for="ExtraToppingsOnItem.ChangedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ExtraToppingsOnItem.ChangedAt" class="control-label"></label>
+                <input asp-for="ExtraToppingsOnItem.ChangedAt" class="form-control" />
+                <span asp-validation-for="ExtraToppingsOnItem.ChangedAt" class="text-danger"></span>
+            </div>*@
+<div class="form-group">
+    <input type="submit" value="Create" class="btn btn-primary" />
+</div>

@@ -1,0 +1,8 @@
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Extensions\bin\Release\netstandard2.1\Extensions.deps.json
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Extensions\bin\Release\netstandard2.1\Extensions.dll
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Extensions\bin\Release\netstandard2.1\Extensions.pdb
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Extensions\obj\Release\netstandard2.1\Extensions.csprojAssemblyReference.cache
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Extensions\obj\Release\netstandard2.1\Extensions.AssemblyInfoInputs.cache
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Extensions\obj\Release\netstandard2.1\Extensions.AssemblyInfo.cs
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Extensions\obj\Release\netstandard2.1\Extensions.dll
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Extensions\obj\Release\netstandard2.1\Extensions.pdb

@@ -1,0 +1,8 @@
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Domain\Contracts.Domain\bin\Debug\netstandard2.1\Contracts.Domain.deps.json
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Domain\Contracts.Domain\bin\Debug\netstandard2.1\Contracts.Domain.dll
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Domain\Contracts.Domain\bin\Debug\netstandard2.1\Contracts.Domain.pdb
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Domain\Contracts.Domain\obj\Debug\netstandard2.1\Contracts.Domain.csprojAssemblyReference.cache
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Domain\Contracts.Domain\obj\Debug\netstandard2.1\Contracts.Domain.AssemblyInfoInputs.cache
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Domain\Contracts.Domain\obj\Debug\netstandard2.1\Contracts.Domain.AssemblyInfo.cs
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Domain\Contracts.Domain\obj\Debug\netstandard2.1\Contracts.Domain.dll
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Domain\Contracts.Domain\obj\Debug\netstandard2.1\Contracts.Domain.pdb

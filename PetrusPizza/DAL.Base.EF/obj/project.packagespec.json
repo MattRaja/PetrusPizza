@@ -1,0 +1,71 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\DAL.Base.EF\\DAL.Base.EF.csproj",
+    "projectName": "ee.itcollege.mrajam.DAL.Base.EF",
+    "projectPath": "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\DAL.Base.EF\\DAL.Base.EF.csproj",
+    "outputPath": "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\DAL.Base.EF\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netstandard2.1"
+    ],
+    "sources": {
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "projectReferences": {
+          "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\Contracts.DAL.Base\\Contracts.DAL.Base.csproj": {
+            "projectPath": "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\Contracts.DAL.Base\\Contracts.DAL.Base.csproj"
+          },
+          "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\DAL.App.DTO\\DAL.App.DTO.csproj": {
+            "projectPath": "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\DAL.App.DTO\\DAL.App.DTO.csproj"
+          },
+          "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\DAL.Base\\DAL.Base.csproj": {
+            "projectPath": "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\DAL.Base\\DAL.Base.csproj"
+          },
+          "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\Domain.App\\Domain.App.csproj": {
+            "projectPath": "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\Domain.App\\Domain.App.csproj"
+          },
+          "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\Domain\\Contracts.Domain\\Contracts.Domain.csproj": {
+            "projectPath": "C:\\Users\\NZXT\\RiderProjects\\icd0009-2019s\\PetrusPizza\\PetrusPizza\\Domain\\Contracts.Domain\\Contracts.Domain.csproj"
+          }
+        }
+      }
+    }
+  },
+  "frameworks": {
+    "netstandard2.1": {
+      "dependencies": {
+        "AutoMapper": {
+          "target": "Package",
+          "version": "[9.0.0, )"
+        },
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[3.1.5, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "NETStandard.Library": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+    }
+  }
+}

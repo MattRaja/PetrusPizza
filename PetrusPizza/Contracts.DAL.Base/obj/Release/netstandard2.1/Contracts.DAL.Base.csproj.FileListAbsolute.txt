@@ -1,0 +1,11 @@
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.Base\obj\Release\netstandard2.1\Contracts.DAL.Base.csprojAssemblyReference.cache
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.Base\obj\Release\netstandard2.1\Contracts.DAL.Base.AssemblyInfoInputs.cache
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.Base\obj\Release\netstandard2.1\Contracts.DAL.Base.AssemblyInfo.cs
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.Base\obj\Release\netstandard2.1\Contracts.DAL.Base.csproj.CopyComplete
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.Base\bin\Release\netstandard2.1\ee.itcollege.mrajam.Contracts.DAL.Base.deps.json
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.Base\bin\Release\netstandard2.1\ee.itcollege.mrajam.Contracts.DAL.Base.dll
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.Base\bin\Release\netstandard2.1\ee.itcollege.mrajam.Contracts.DAL.Base.pdb
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.Base\bin\Release\netstandard2.1\ee.itcollege.mrajam.Contracts.Domain.dll
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.Base\bin\Release\netstandard2.1\ee.itcollege.mrajam.Contracts.Domain.pdb
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.Base\obj\Release\netstandard2.1\ee.itcollege.mrajam.Contracts.DAL.Base.dll
+C:\Users\NZXT\RiderProjects\icd0009-2019s\PetrusPizza\PetrusPizza\Contracts.DAL.Base\obj\Release\netstandard2.1\ee.itcollege.mrajam.Contracts.DAL.Base.pdb
